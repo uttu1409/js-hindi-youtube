@@ -25,6 +25,29 @@ let myobj = {   //object
     age: 21,
 }
 
-const myFunction = function (params) {  // function  // this returns object function
+const myFunction = function (params) {  // function - // this returns object function
     console.log("Hello world");
 }
+
+// *********************************** Memory
+
+// Stack (Primitive), Heap (Non - Primitive)
+
+let myName = "Utsav" // inside stack
+
+let anotherName = "Ranu"
+anotherName = "Sparsh"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {    // inside heap
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "Utsav@google.com"
+console.log(userTwo);
+
+// stack mai value ka copy diya jata hai and heap mai value 
